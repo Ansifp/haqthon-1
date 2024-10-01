@@ -1,0 +1,274 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/*.search-container {
+    display: inline-flex;
+    border: 2px solid #888;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 50px;
+}*/
+
+
+.search-input {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline-color: #333;
+    flex-grow: 2;
+}
+
+.search-button {
+    background-color: #dedede;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.search-icon {
+    font-size: 18px;
+}
+
+.search-container {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 500px; /* Increase the length of the search bar */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar::placeholder {
+    color: #888;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.crypto-details {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.creators-section {
+    background-color: #f0fff4;
+    margin: 60px 0;
+    height: min-content;
+}
+
+.creators-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.creators {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.creator {
+    text-align: center;
+    width: 150px;
+}
+
+.creator img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.halal-status{
+    background-color: #2e8b57;
+    width: 100%;
+}
+
+
+.black-section {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.green-section {
+    background-color: #28a745; /* Green color */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-text {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+.founder{
+    margin-top: 30px;
+}
+.founder-name{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #ffffff; /* Change to desired background color */
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px; /* Adds space above the footer */
+    border-top: 3px solid black; /* Black line above the footer */
+        }
+
+        .footer a {
+            color: #0073e6; /* Link color */
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-column {
+            display: inline-block;
+            vertical-align: top;
+            width: 18%; /* Adjust width if needed */
+            margin-right: 20px;
+        }
+
+        .footer-column:last-child {
+            margin-right: 0;
+        }
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-column {
+    width: 15%;
+}
+
+.footer-column h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+/* Cryptocurrency Table Styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: 'Amiri', serif;
+    background-color: #f0fff4;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2e8b57;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Add bold and color for negative/positive changes */
+td.change {
+    font-weight: bold;
+}
+
+td.change.positive {
+    color: green;
+}
+
+td.change.negative {
+    color: red;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
